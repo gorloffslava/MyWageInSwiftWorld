@@ -14,7 +14,20 @@
 		CC0DDE811F7CE4B900D9C4C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0DDE7F1F7CE4B900D9C4C6 /* LaunchScreen.storyboard */; };
 		CC0DDE8C1F7CF3A300D9C4C6 /* CircledViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0DDE8B1F7CF3A300D9C4C6 /* CircledViewExtension.swift */; };
 		CC762F8D1F7D0C1300962D14 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC762F8C1F7D0C1300962D14 /* CustomTextField.swift */; };
+		CC762F911F7D40CD00962D14 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC762F901F7D40CD00962D14 /* Wage.swift */; };
+		CC762FC51F7D482900962D14 /* MyWageInSwiftWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC762FC41F7D482900962D14 /* MyWageInSwiftWorldTests.swift */; };
+		CC762FCC1F7D485100962D14 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC762F901F7D40CD00962D14 /* Wage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC762FC71F7D482900962D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC0DDE6B1F7CE4B900D9C4C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC0DDE721F7CE4B900D9C4C6;
+			remoteInfo = MyWageInSwiftWorld;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CC0DDE731F7CE4B900D9C4C6 /* MyWageInSwiftWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWageInSwiftWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +39,21 @@
 		CC0DDE821F7CE4B900D9C4C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC0DDE8B1F7CF3A300D9C4C6 /* CircledViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledViewExtension.swift; sourceTree = "<group>"; };
 		CC762F8C1F7D0C1300962D14 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CC762F901F7D40CD00962D14 /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
+		CC762FC21F7D482900962D14 /* MyWageInSwiftWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWageInSwiftWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC762FC41F7D482900962D14 /* MyWageInSwiftWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWageInSwiftWorldTests.swift; sourceTree = "<group>"; };
+		CC762FC61F7D482900962D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CC0DDE701F7CE4B900D9C4C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC762FBF1F7D482900962D14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				CC0DDE751F7CE4B900D9C4C6 /* MyWageInSwiftWorld */,
+				CC762FC31F7D482900962D14 /* MyWageInSwiftWorldTests */,
 				CC0DDE741F7CE4B900D9C4C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				CC0DDE731F7CE4B900D9C4C6 /* MyWageInSwiftWorld.app */,
+				CC762FC21F7D482900962D14 /* MyWageInSwiftWorldTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +99,7 @@
 		CC0DDE881F7CF37900D9C4C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC762F901F7D40CD00962D14 /* Wage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +119,15 @@
 				CC0DDE781F7CE4B900D9C4C6 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC762FC31F7D482900962D14 /* MyWageInSwiftWorldTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC762FC41F7D482900962D14 /* MyWageInSwiftWorldTests.swift */,
+				CC762FC61F7D482900962D14 /* Info.plist */,
+			);
+			path = MyWageInSwiftWorldTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +150,24 @@
 			productReference = CC0DDE731F7CE4B900D9C4C6 /* MyWageInSwiftWorld.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CC762FC11F7D482900962D14 /* MyWageInSwiftWorldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC762FC91F7D482900962D14 /* Build configuration list for PBXNativeTarget "MyWageInSwiftWorldTests" */;
+			buildPhases = (
+				CC762FBE1F7D482900962D14 /* Sources */,
+				CC762FBF1F7D482900962D14 /* Frameworks */,
+				CC762FC01F7D482900962D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC762FC81F7D482900962D14 /* PBXTargetDependency */,
+			);
+			name = MyWageInSwiftWorldTests;
+			productName = MyWageInSwiftWorldTests;
+			productReference = CC762FC21F7D482900962D14 /* MyWageInSwiftWorldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +181,11 @@
 					CC0DDE721F7CE4B900D9C4C6 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+					};
+					CC762FC11F7D482900962D14 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC0DDE721F7CE4B900D9C4C6;
 					};
 				};
 			};
@@ -144,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				CC0DDE721F7CE4B900D9C4C6 /* MyWageInSwiftWorld */,
+				CC762FC11F7D482900962D14 /* MyWageInSwiftWorldTests */,
 			);
 		};
 /* End PBXProject section */
@@ -159,6 +219,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC762FC01F7D482900962D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -168,12 +235,30 @@
 			files = (
 				CC762F8D1F7D0C1300962D14 /* CustomTextField.swift in Sources */,
 				CC0DDE791F7CE4B900D9C4C6 /* ViewController.swift in Sources */,
+				CC762F911F7D40CD00962D14 /* Wage.swift in Sources */,
 				CC0DDE771F7CE4B900D9C4C6 /* AppDelegate.swift in Sources */,
 				CC0DDE8C1F7CF3A300D9C4C6 /* CircledViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC762FBE1F7D482900962D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC762FC51F7D482900962D14 /* MyWageInSwiftWorldTests.swift in Sources */,
+				CC762FCC1F7D485100962D14 /* Wage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC762FC81F7D482900962D14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC0DDE721F7CE4B900D9C4C6 /* MyWageInSwiftWorld */;
+			targetProxy = CC762FC71F7D482900962D14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CC0DDE7A1F7CE4B900D9C4C6 /* Main.storyboard */ = {
@@ -332,6 +417,38 @@
 			};
 			name = Release;
 		};
+		CC762FCA1F7D482900962D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCF4B6G79X;
+				INFOPLIST_FILE = MyWageInSwiftWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftworld.MyWageInSwiftWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyWageInSwiftWorld.app/MyWageInSwiftWorld";
+			};
+			name = Debug;
+		};
+		CC762FCB1F7D482900962D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCF4B6G79X;
+				INFOPLIST_FILE = MyWageInSwiftWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftworld.MyWageInSwiftWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyWageInSwiftWorld.app/MyWageInSwiftWorld";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -349,6 +466,15 @@
 			buildConfigurations = (
 				CC0DDE861F7CE4B900D9C4C6 /* Debug */,
 				CC0DDE871F7CE4B900D9C4C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC762FC91F7D482900962D14 /* Build configuration list for PBXNativeTarget "MyWageInSwiftWorldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC762FCA1F7D482900962D14 /* Debug */,
+				CC762FCB1F7D482900962D14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
