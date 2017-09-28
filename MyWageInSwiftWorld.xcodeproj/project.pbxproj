@@ -13,6 +13,7 @@
 		CC0DDE7E1F7CE4B900D9C4C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0DDE7D1F7CE4B900D9C4C6 /* Assets.xcassets */; };
 		CC0DDE811F7CE4B900D9C4C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0DDE7F1F7CE4B900D9C4C6 /* LaunchScreen.storyboard */; };
 		CC0DDE8C1F7CF3A300D9C4C6 /* CircledViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0DDE8B1F7CF3A300D9C4C6 /* CircledViewExtension.swift */; };
+		CC762F8D1F7D0C1300962D14 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC762F8C1F7D0C1300962D14 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CC0DDE801F7CE4B900D9C4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC0DDE821F7CE4B900D9C4C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC0DDE8B1F7CF3A300D9C4C6 /* CircledViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledViewExtension.swift; sourceTree = "<group>"; };
+		CC762F8C1F7D0C1300962D14 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CC0DDE8B1F7CF3A300D9C4C6 /* CircledViewExtension.swift */,
+				CC762F8C1F7D0C1300962D14 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC762F8D1F7D0C1300962D14 /* CustomTextField.swift in Sources */,
 				CC0DDE791F7CE4B900D9C4C6 /* ViewController.swift in Sources */,
 				CC0DDE771F7CE4B900D9C4C6 /* AppDelegate.swift in Sources */,
 				CC0DDE8C1F7CF3A300D9C4C6 /* CircledViewExtension.swift in Sources */,
