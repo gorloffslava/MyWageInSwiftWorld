@@ -12,6 +12,7 @@
 		CC0DDE7C1F7CE4B900D9C4C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0DDE7A1F7CE4B900D9C4C6 /* Main.storyboard */; };
 		CC0DDE7E1F7CE4B900D9C4C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0DDE7D1F7CE4B900D9C4C6 /* Assets.xcassets */; };
 		CC0DDE811F7CE4B900D9C4C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0DDE7F1F7CE4B900D9C4C6 /* LaunchScreen.storyboard */; };
+		CC0DDE8C1F7CF3A300D9C4C6 /* CircledViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0DDE8B1F7CF3A300D9C4C6 /* CircledViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CC0DDE7D1F7CE4B900D9C4C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC0DDE801F7CE4B900D9C4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC0DDE821F7CE4B900D9C4C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC0DDE8B1F7CF3A300D9C4C6 /* CircledViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		CC0DDE751F7CE4B900D9C4C6 /* MyWageInSwiftWorld */ = {
 			isa = PBXGroup;
 			children = (
+				CC0DDE8A1F7CF38800D9C4C6 /* Controller */,
+				CC0DDE891F7CF38200D9C4C6 /* View */,
+				CC0DDE881F7CF37900D9C4C6 /* Model */,
 				CC0DDE761F7CE4B900D9C4C6 /* AppDelegate.swift */,
-				CC0DDE781F7CE4B900D9C4C6 /* ViewController.swift */,
 				CC0DDE7A1F7CE4B900D9C4C6 /* Main.storyboard */,
 				CC0DDE7D1F7CE4B900D9C4C6 /* Assets.xcassets */,
 				CC0DDE7F1F7CE4B900D9C4C6 /* LaunchScreen.storyboard */,
 				CC0DDE821F7CE4B900D9C4C6 /* Info.plist */,
 			);
 			path = MyWageInSwiftWorld;
+			sourceTree = "<group>";
+		};
+		CC0DDE881F7CF37900D9C4C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC0DDE891F7CF38200D9C4C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC0DDE8B1F7CF3A300D9C4C6 /* CircledViewExtension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC0DDE8A1F7CF38800D9C4C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC0DDE781F7CE4B900D9C4C6 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			files = (
 				CC0DDE791F7CE4B900D9C4C6 /* ViewController.swift in Sources */,
 				CC0DDE771F7CE4B900D9C4C6 /* AppDelegate.swift in Sources */,
+				CC0DDE8C1F7CF3A300D9C4C6 /* CircledViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

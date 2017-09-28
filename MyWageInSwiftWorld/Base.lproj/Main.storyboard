@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,109 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyWageInSwiftWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1Cx-OZ-ndc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="SpM-qT-e58">
+                                <rect key="frame" x="142" y="35" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="46x-fD-lem"/>
+                                    <constraint firstAttribute="height" constant="90" id="T3Q-Vr-jOc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusRatio">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusRation">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваша зарплата в час" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qnq-9d-btJ">
+                                <rect key="frame" x="20" y="160" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7kc-0T-VrJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Цена вещи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eVl-yE-2h3">
+                                <rect key="frame" x="20" y="225" width="335" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ja-R8-LaJ">
+                                <rect key="frame" x="20" y="310" width="335" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7u-tX-Hfy">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HBZ-t3-RWo"/>
+                                </constraints>
+                                <state key="normal" title="Очистить калькулятор">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="часов(а)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oax-nb-QF4">
+                                <rect key="frame" x="132" y="380" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QTp-8z-lmk"/>
+                                    <constraint firstAttribute="width" constant="110" id="ZdD-fZ-cSq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Ja-R8-LaJ" firstAttribute="top" secondItem="eVl-yE-2h3" secondAttribute="bottom" constant="45" id="6Nm-ju-Glr"/>
+                            <constraint firstItem="eVl-yE-2h3" firstAttribute="top" secondItem="qnq-9d-btJ" secondAttribute="bottom" constant="25" id="DKC-ej-QTZ"/>
+                            <constraint firstItem="Oax-nb-QF4" firstAttribute="top" secondItem="1Ja-R8-LaJ" secondAttribute="bottom" constant="5" id="DPP-dO-v8q"/>
+                            <constraint firstItem="SpM-qT-e58" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="DtU-Ge-Gdu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qnq-9d-btJ" secondAttribute="trailing" constant="20" id="MR8-p6-j8Y"/>
+                            <constraint firstItem="1Ja-R8-LaJ" firstAttribute="width" secondItem="eVl-yE-2h3" secondAttribute="width" id="Mqx-aJ-7WM"/>
+                            <constraint firstItem="qnq-9d-btJ" firstAttribute="top" secondItem="SpM-qT-e58" secondAttribute="bottom" constant="35" id="Qhe-t1-P28"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h7u-tX-Hfy" secondAttribute="trailing" constant="20" id="U3K-sa-zgC"/>
+                            <constraint firstItem="Oax-nb-QF4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W8x-GX-f7b"/>
+                            <constraint firstItem="qnq-9d-btJ" firstAttribute="leading" secondItem="eVl-yE-2h3" secondAttribute="leading" id="WDX-ay-F2H"/>
+                            <constraint firstItem="qnq-9d-btJ" firstAttribute="trailing" secondItem="eVl-yE-2h3" secondAttribute="trailing" id="WS2-GZ-b6e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Cx-OZ-ndc" secondAttribute="bottom" id="a1P-JM-3Rv"/>
+                            <constraint firstItem="qnq-9d-btJ" firstAttribute="height" secondItem="eVl-yE-2h3" secondAttribute="height" id="b0x-He-8qp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Cx-OZ-ndc" secondAttribute="trailing" id="dOq-TS-2ds"/>
+                            <constraint firstItem="1Cx-OZ-ndc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jgI-ov-2kx"/>
+                            <constraint firstItem="1Cx-OZ-ndc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ofs-Jg-qmW"/>
+                            <constraint firstItem="SpM-qT-e58" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pOO-HV-Tfd"/>
+                            <constraint firstItem="qnq-9d-btJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rZz-lo-Ta2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h7u-tX-Hfy" secondAttribute="bottom" constant="20" id="sSC-FA-sGB"/>
+                            <constraint firstItem="1Ja-R8-LaJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xya-m8-iS0"/>
+                            <constraint firstItem="h7u-tX-Hfy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yEP-oB-Hhg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hoursLabel" destination="Oax-nb-QF4" id="E4o-Gc-Yff"/>
+                        <outlet property="itemPriceTextField" destination="eVl-yE-2h3" id="D1x-5Y-zzu"/>
+                        <outlet property="resultLabel" destination="1Ja-R8-LaJ" id="tfJ-J8-oka"/>
+                        <outlet property="wageTextField" destination="qnq-9d-btJ" id="2ja-Vm-wc7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="90" height="90"/>
+        <image name="background" width="1920" height="1281"/>
+    </resources>
 </document>
